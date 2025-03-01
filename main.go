@@ -16,4 +16,6 @@ func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/api/hello", HelloHandler)
 	http.ListenAndServe(":8080", router)
+
+	fmt.Println("Server started")
 }
